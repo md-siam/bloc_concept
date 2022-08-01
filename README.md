@@ -6,15 +6,15 @@ The full documentation on BLoC package is available in [bloclibrary.dev](https:/
 
 Bloc was designed with three core values in mind:
 
-```java
-   1. Simple: Easy to understand & can be used by developers with
-                  varying skill levels.
+```
+1. Simple: Easy to understand & can be used by developers with
+               varying skill levels.
 
-   2. Powerful: Help make amazing, complex applications by composing
-                  them of smaller components.
+2. Powerful: Help make amazing, complex applications by composing
+               them of smaller components.
 
-   3. Testable: Easily test every aspect of an application so that we
-                  can iterate with confidence.
+3. Testable: Easily test every aspect of an application so that we
+               can iterate with confidence.
 ```
 
 **Overall, Bloc attempts to make state changes predictable by regulating when a state change can occur and enforcing a single way to change state throughout an entire application.**
