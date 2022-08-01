@@ -61,9 +61,5 @@ Some vital Flutter concepts to get going (widget, widget tree).
 <p>
 Like every application, BLoC also follows a specific file pattern. The "Business logic" layer is separated from the "Presentation" and from the "Data" layers. 
 </p>
-<img align="center" src="screenshots/bloc_architect.png"></img>
+<img align="center" src="screenshots/4_bloc_architecture/bloc_architect.png"></img>
 <p align="center">Complete BLoC architecture</p><br>
-
-<img align="center" src="screenshots/weather_app.png"></img>
-
-<p align="center">Weather app architecture</p>
