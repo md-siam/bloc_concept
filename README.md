@@ -2,35 +2,41 @@
 
 <img align="right" src="screenshots/logo/playstore.png" height="190"></img>
 
-<p>The full documentation on BLoC package is available in <a class="more-link" href="https://bloclibrary.dev/" target="_blank">bloclibrary.dev</a>. This video tutorial is also available on <a class="more-link" href="https://www.youtube.com/watch?v=THCkkQ-V1-8" target="_blank">youtube</a>. If you want, then instead of buying the Udemy tutorial, you can follow the youtube tutorial.</p>
+The full documentation on BLoC package is available in [bloclibrary.dev](https://bloclibrary.dev/). This video tutorial is also available on [youtube](https://www.youtube.com/watch?v=THCkkQ-V1-8). If you want, then instead of buying the Udemy tutorial, you can follow the youtube tutorial.
 
-<p>
 Bloc was designed with three core values in mind:
 
-1. Simple: Easy to understand & can be used by developers with varying skill levels.
-2. Powerful: Help make amazing, complex applications by composing them of smaller components.
-3. Testable: Easily test every aspect of an application so that we can iterate with confidence.
+```java
+   1. Simple: Easy to understand & can be used by developers with
+                  varying skill levels.
 
-Overall, Bloc attempts to make state changes predictable by regulating when a state change can occur and enforcing a single way to change state throughout an entire application.
+   2. Powerful: Help make amazing, complex applications by composing
+                  them of smaller components.
 
-</p>
+   3. Testable: Easily test every aspect of an application so that we
+                  can iterate with confidence.
+```
+
+**Overall, Bloc attempts to make state changes predictable by regulating when a state change can occur and enforcing a single way to change state throughout an entire application.**
 
 ## BLoC Core Concept
 
-<img align="left" src="screenshots/bloc_n_cubit.png" height="250"></img>
+<img align="right" src="screenshots/2_core_concept/bloc_n_cubit.png" height="250"></img>
 
-1. Stream: <br>
-   `It is the foundation of BLoC. The stream is a river , which transport some data, on a boat, from the sender to the receiver. The transported data is asynchronous.`
-2. Cubit: <br>
-   `A cubit is the minimal version of a BLoC. BLoC actually extends cubit.`
-3. Bloc: <br>
-   ` BLoC is the big brain of the project. Where as cubit is used to optimize the functionality of the project.`
+**1. Stream:** <br>
+It is the foundation of BLoC. The stream is a river , which transport some data, on a boat, from the sender to the receiver. The transported data is asynchronous.<br>
+
+**2. Cubit:** <br>
+A cubit is the minimal version of a BLoC. BLoC actually extends cubit.
+
+**3. Bloc:** <br>
+BLoC is the big brain of the project. Where as cubit is used to optimize the functionality of the project.
 
 \*\*Note: Start with a cubit. If you see the necessity, then modify your cubit into BLoC.
 
 ## Flutter BLoC Concept
 
-<img align="left" src="screenshots/flutter_bloc.png" height="250"></img>
+<img align="right" src="screenshots/2_core_concept/flutter_bloc.png" height="250"></img>
 
 <p>
 Some vital Flutter concepts to get going (widget, widget tree).
