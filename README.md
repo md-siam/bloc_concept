@@ -60,6 +60,6 @@ Some vital Flutter concepts to get going (widget, widget tree).
 
 <img align="left" src="screenshots/4_bloc_architecture/folder_structure.png"></img>
 
+<br><br>
 Like every state-management packages, BLoC also follows a specific file pattern. <br>
-The "Business logic" layer is separated from the "Presentation" and from the "Data" layers. 
-
+The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.
