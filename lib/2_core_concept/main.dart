@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_print
-
+/// Basics of [Stream]
+///
 Stream<int> boatStream() async* {
   for (int i = 1; i <= 10; i++) {
     print('SENT boat no. $i');
