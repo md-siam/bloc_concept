@@ -9,18 +9,19 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
+  //
+  /// The BuildContext is the [CONTEXT] in which a
+  /// specific `WIDGET` is `BUILT`.
+  ///
   @override
   Widget build(BuildContext context) {
     return BlocProvider<CounterCubit>(
       create: (context) => CounterCubit(),
       child: MaterialApp(
-        title: 'Flutter BLoC (Cubit)',
+        title: 'Counter using Cubit',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.orange,
-        ),
-        home: const MyHomePage(title: 'Flutter BLoC (Cubit)'),
+        theme: ThemeData(primarySwatch: Colors.teal),
+        home: const MyHomePage(title: 'Counter Using Cubit'),
       ),
     );
   }
@@ -28,10 +29,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   final String title;
-  const MyHomePage({
-    Key? key,
-    required this.title,
-  }) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();

@@ -48,9 +48,9 @@ Some vital Flutter concepts to get going (widget, widget tree).
 5. RepositoryProvider
 6. MultiBlocListener, MultiBlocProvider, MultiRepositoryProvider
 </p>
-<p>
-`RepositoryProvider is a class. Which has the main function which makes flutter communicate with outer data layer i.e. internet, APIs, databases, etc`
-</p>
+
+**`RepositoryProvider` is a class. Which has the main function which makes flutter communicate with outer data layer i.e. internet, APIs, databases, etc.**
+
 <table align="center" style="margin: 0px auto;">
   <tr>
     <td><img align="right" src="screenshots/bloc_vital_concept.png"></img></td>
@@ -71,7 +71,7 @@ Some vital Flutter concepts to get going (widget, widget tree).
 
 <br><br>
 Like every state-management packages, BLoC also follows a specific file pattern. <br>
-The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.
+The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br><br><br><br><br><br><br><br><br>
 
 ## App Screenshots
 
@@ -79,11 +79,16 @@ The "Business logic" layer is separated from the "Presentation" and from the "Da
   <tr>
     <th>Folder No.</th>
     <th>Name of the App</th>
+    <th>Logic Files</th>
     <th>Screenshots</th>
   </tr>
   <tr>
-    <td>1</td>
-    <td><a href="/lib/0_provider_overview/provider_overview_01/counter.dart">Counter App</a></td>
-    <td><img align="right" src="screenshots/counterApp.png" width="250"></img></td>
+    <td align="center">3</td>
+    <td><a href="lib/3_flutter_bloc_concept/main.dart">Counter Using Cubit</a></td>
+    <td>
+      <a href="lib/3_flutter_bloc_concept/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/3_flutter_bloc_concept/cubit/counter_state.dart">counter_state.dart</a>
+    </td>
+    <td><img align="center" src="screenshots/gif/3_flutter_bloc_concept.gif" width="250"></img></td>
   </tr>
 </table>
