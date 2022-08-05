@@ -71,7 +71,7 @@ Some vital Flutter concepts to get going (widget, widget tree).
 
 <br><br>
 Like every state-management packages, BLoC also follows a specific file pattern. <br>
-The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br><br><br><br><br><br><br><br><br>
+The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br><br><br><br><br><br><br><br>
 
 ## App Screenshots
 
@@ -88,7 +88,7 @@ The "Business logic" layer is separated from the "Presentation" and from the "Da
     <td>
       <a href="lib/3_flutter_bloc_concept/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/3_flutter_bloc_concept/cubit/counter_state.dart">counter_state.dart</a>
-    </td>
+      </td>
     <td><img align="center" src="screenshots/gif/3_flutter_bloc_concept.gif" width="250"></img></td>
   </tr>
 </table>
