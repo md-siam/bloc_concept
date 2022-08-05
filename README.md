@@ -75,8 +75,8 @@ Some vital Flutter concepts to get going (widget, widget tree).
 <br>
 <img align="left" src="screenshots/4_bloc_architecture/folder_structure.png"></img>
 
-Like every state-management packages, BLoC also follows a specific file pattern. <br>
-The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br><br>
+Like every state-management packages, BLoC also follows a specific file pattern.
+The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br>
 
 &nbsp; 1. First design the models. A model is a `blueprint` of the data an application will work with.<br><br>
 &nbsp; 2. Next the data providers. The data providers' responsibility is to provide raw data to it's successor, which is the `repositories`. It is actually an API for our own application. <br><br>
