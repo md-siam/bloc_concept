@@ -1,3 +1,9 @@
+<img src="screenshots/badges/built-with-love.svg" height="28px"/>&nbsp;&nbsp;
+<img src="screenshots/badges/flutter-dart.svg" height="28px" />&nbsp;&nbsp;
+<a href="https://choosealicense.com/licenses/mit/" target="_blank"><img src="screenshots/badges/license-MIT.svg" height="28px" /></a>&nbsp;&nbsp;
+<img src="screenshots/badges/Flutter-3.svg" height="28px" />&nbsp;&nbsp;
+<img src="screenshots/badges/dart-null_safety-blue.svg" height="28px"/>
+
 # BLoC Tutorial - [Udemy](https://www.udemy.com/course/bloc-from-zero-to-hero/)
 
 <img align="right" src="screenshots/logo/playstore.png" height="190"></img>
@@ -69,9 +75,12 @@ Some vital Flutter concepts to get going (widget, widget tree).
 <br>
 <img align="left" src="screenshots/4_bloc_architecture/folder_structure.png"></img>
 
-<br><br>
 Like every state-management packages, BLoC also follows a specific file pattern. <br>
-The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br><br><br><br><br><br><br><br>
+The "Business logic" layer is separated from the "Presentation" and from the "Data" layers.<br><br>
+
+&nbsp; 1. First design the models. A model is a `blueprint` of the data an application will work with.<br><br>
+&nbsp; 2. Next the data providers. The data providers' responsibility is to provide raw data to it's successor, which is the `repositories`. It is actually an API for our own application. <br><br>
+&nbsp; 3.The repository is mainly a `wrapper` around one or more data providers. Repositories are also classes, classes which contains dependencies of the respective data providers.<br><br>
 
 ## App Screenshots
 
