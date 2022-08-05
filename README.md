@@ -72,7 +72,7 @@ Some vital Flutter concepts to get going (widget, widget tree).
     <td><img align="right" src="screenshots/4_bloc_architecture/bloc_architect.png"></img></td>
   </tr>
 </table>
-<br>
+
 <img align="left" src="screenshots/4_bloc_architecture/folder_structure.png"></img>
 
 Like every state-management packages, BLoC also follows a specific file pattern.
