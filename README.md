@@ -79,7 +79,7 @@ BLoC follows a specific folder pattern. The "Business logic" layer is separated 
 
 &nbsp;1. First design the models. A model is a `blueprint` of the data an application will work with.<br><br>
 &nbsp;2. Next the data providers. The data providers' responsibility is to provide raw data to it's successor, which is the `repositories`. It is actually an `API` for our own application. <br><br>
-&nbsp;3. The repository is mainly a `wrapper` around one, or more data providers. Repositories are also `classes`, which contains dependencies of the respective data providers.<br>
+&nbsp;3. The repository is mainly a `wrapper` around one, or more data providers. Repositories are also `classes`, which contains dependencies of the respective data providers.
 
 ## BLoC Testing
 
