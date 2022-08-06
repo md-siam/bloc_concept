@@ -111,6 +111,14 @@ Hence, we need `equatable` package to solve this problem. Equatable package simp
   BlocProvider() vs BlocProvider.value()
 ```
 
+Local Access & Route Access
+
+Three types of routing:
+
+1. Anonymous routing
+2. Named routing
+3. Generated routing
+
 ## App Screenshots
 
 <table align="center" style="margin: 0px auto;">
