@@ -8,7 +8,7 @@
 
 <img align="right" src="screenshots/logo/playstore.png" height="190"></img>
 
-This tutorial video tutorial is also available on [youtube](https://www.youtube.com/watch?v=THCkkQ-V1-8). If you want, then instead of buying the Udemy tutorial, you can follow the youtube tutorial. The full documentation on BLoC package is available in [bloclibrary.dev](https://bloclibrary.dev/).
+This tutorial video is also available on [youtube](https://www.youtube.com/watch?v=THCkkQ-V1-8). If you want, then instead of buying the Udemy tutorial, you can follow the youtube tutorial. The full documentation on BLoC package is available in [bloclibrary.dev](https://bloclibrary.dev/).
 
 Bloc was designed with three core values in mind:
 
@@ -79,7 +79,7 @@ BLoC follows a specific folder pattern. The "Business logic" layer is separated 
 
 &nbsp;1. First design the models. A model is a `blueprint` of the data an application will work with.<br><br>
 &nbsp;2. Next the data providers. The data providers' responsibility is to provide raw data to it's successor, which is the `repositories`. It is actually an `API` for our own application. <br><br>
-&nbsp;3. The repository is mainly a `wrapper` around one, or more data providers. Repositories are also `classes`, which contains dependencies of the respective data providers.<br><br>
+&nbsp;3. The repository is mainly a `wrapper` around one, or more data providers. Repositories are also `classes`, which contains dependencies of the respective data providers.<br>
 
 ## BLoC Testing
 
@@ -103,6 +103,12 @@ Hence, we need `equatable` package to solve this problem. Equatable package simp
     CounterState stateB = CounterState(counterValue:0);
 
                 statA != stateB
+```
+
+## BLoC Access
+
+```dart
+  BlocProvider() vs BlocProvider.value()
 ```
 
 ## App Screenshots
