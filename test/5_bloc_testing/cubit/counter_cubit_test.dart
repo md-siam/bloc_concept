@@ -19,7 +19,7 @@ void main() {
         () {
       expect(
         counterCubit.state,
-        CounterState(counterValue: 0, wasIncremented: true),
+        CounterState(counterValue: 0),
       );
     });
 

@@ -37,6 +37,7 @@ dependencies:
   # For state-management
   bloc: ^8.0.3
   flutter_bloc: ^8.0.1
+  # Helpful for testing equal instances
   equatable: ^2.0.3
   # For testing
   bloc_test: ^9.0.3

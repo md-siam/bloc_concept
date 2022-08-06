@@ -4,11 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'cubit/counter_cubit.dart';
 
 void main() {
-  final CounterState counterState1 =
-      CounterState(counterValue: 1, wasIncremented: true);
-  final CounterState counterState2 =
-      CounterState(counterValue: 1, wasIncremented: true);
-  //! THIS SHOULD RETURN TRUE NOW
   runApp(const MyApp());
 }
 
@@ -31,7 +26,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   final String title;

@@ -81,6 +81,30 @@ BLoC follows a specific folder pattern. The "Business logic" layer is separated 
 &nbsp;2. Next the data providers. The data providers' responsibility is to provide raw data to it's successor, which is the `repositories`. It is actually an `API` for our own application. <br><br>
 &nbsp;3. The repository is mainly a `wrapper` around one, or more data providers. Repositories are also `classes`, which contains dependencies of the respective data providers.<br><br>
 
+## BLoC Testing
+
+A test is defined by how we programmatically tell flutter to `double check` the output given by a feature is equal to the expected response we planned on receiving. Packages needed for testing a BLoC:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  # Helpful for testing equal instances
+  equatable: ^2.0.3
+  # For testing
+  bloc_test: ^9.0.3
+```
+
+In Dart language, **TWO INSTANCES** of the same exact class are not equal even though they are basically identical. This is because, these two instances are stored in different part of the memory, and dart compares their location in memories instead of their value.<br>
+Hence, we need `equatable` package to solve this problem. Equatable package simply `@overrides` the equal operator.
+
+```dart
+    CounterState stateA = CounterState(counterValue:0);
+    CounterState stateB = CounterState(counterValue:0);
+
+                statA != stateB
+```
+
 ## App Screenshots
 
 <table align="center" style="margin: 0px auto;">
@@ -98,5 +122,14 @@ BLoC follows a specific folder pattern. The "Business logic" layer is separated 
       <a href="lib/3_flutter_bloc_concept/cubit/counter_state.dart">counter_state.dart</a>
       </td>
     <td><img align="center" src="screenshots/gif/3_flutter_bloc_concept.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">5</td>
+    <td><a href="lib/5_bloc_testing/main.dart">BLoC Testing</a></td>
+    <td>
+      <a href="lib/5_bloc_testing/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/5_bloc_testing/cubit/counter_state.dart">counter_state.dart</a>
+      </td>
+    <td><img align="center" src="screenshots/gif/5_bloc_testing.gif" width="250"></img></td>
   </tr>
 </table>
