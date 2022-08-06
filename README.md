@@ -8,7 +8,7 @@
 
 <img align="right" src="screenshots/logo/playstore.png" height="190"></img>
 
-The full documentation on BLoC package is available in [bloclibrary.dev](https://bloclibrary.dev/). This video tutorial is also available on [youtube](https://www.youtube.com/watch?v=THCkkQ-V1-8). If you want, then instead of buying the Udemy tutorial, you can follow the youtube tutorial.
+This tutorial video tutorial is also available on [youtube](https://www.youtube.com/watch?v=THCkkQ-V1-8). If you want, then instead of buying the Udemy tutorial, you can follow the youtube tutorial. The full documentation on BLoC package is available in [bloclibrary.dev](https://bloclibrary.dev/).
 
 Bloc was designed with three core values in mind:
 
