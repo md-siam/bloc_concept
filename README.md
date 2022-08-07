@@ -168,8 +168,9 @@ The `BuildContext` is a tool which helps handle the location of the widget insid
 One of the most common ERROR of bloc/cubit is:
 
 ```dart
-  "BlocProvider.of() fails to find a 
-  context containing a specific bloc/cubit"
+"BlocProvider.of() fails to find 
+a context containing a specific 
+bloc/cubit"
 ```
 
 A BuildContext of a widget keeps tract only of their direct `parent` and nothing else. Hence, the relationship between the BuildContext is a bottom-up relationship.
