@@ -117,15 +117,15 @@ Hence, we need `equatable` package to solve this problem. Equatable package simp
 
 - **Local Access:** Providing an instance of bloc/cubit to a `SINGLE SCREEN` is called local access. Example: wrapping the `HomeScreen()` with BlocProvider().
 
-- **Route Access:** Providing an instance of bloc/cubit to `MULTIPLE SCREEN` is called route access. Example: wrapping the `SecondScreen()` with BlocProvider.value().
+- **Route Access:** Providing an instance of bloc/cubit to `MULTIPLE SCREEN` is called route access. Example: wrapping the `SecondScreen()` & `ThirdScreen()`  with BlocProvider.value().
 
-- **Global Access:** Providing am instance of bloc/cubit to `EVERY SCREEN` to your application. Example: wrapping the `MaterialApp()` with `BlocProver()` or `MultiBlocProvider()`.
+- **Global Access:** Providing am instance of bloc/cubit to `EVERY SCREEN` to your application. Example: wrapping the `MaterialApp()` with `BlocProvider()` or `MultiBlocProvider()`.
 
 Three types of routing option in Flutter:
 
 1. Anonymous routing: Navigation WITHOUT a RouteName.
 2. Named routing: Navigation WITH a RouteName. Recommended for small & medium size project.
-3. Generated routing: Separating the route information into a separate file. Recommended for large size project
+3. Generated routing: Separating the route information into a separate file. Recommended for large size project.
 
 ## App Screenshots
 
