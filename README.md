@@ -135,17 +135,30 @@ Three types of routing option in Flutter:
   </tr>
 </table>
 
-A Bloc.Cubit can communicate with each other using `StreamSubscription` or `BlocListener`. Both methods are equally good with their specific PROS/CONS<br>
+A Bloc/Cubit can communicate with each other using `StreamSubscription` or `BlocListener`. Both methods are equally good with their specific PROS/CONS<br>
 
-PROS of StreamSubscription:
+PROS of `StreamSubscription`:
 
 - organized, structured, easy to read & maintain.
 - will help us practice stream skills.
 
-CONS of StreamSubscription:
+CONS of `StreamSubscription`:
 
 - it may get cluttered really fast on huge apps
 - not closing streamSubscription => huge memory leaks
+
+<br>----------------------------------------------- xxxx -----------------------------------------------<br>
+
+`BlocListener` is a widget, hence it should be inside the widget tree. This just notifies the bloc/cubit. It tells the bloc/cubit what to do, not how to do it.
+
+PROS of `BlocListener`:
+
+- It takes care internally of all STREAMSubscriptions
+- No need to take care of stream/memory leaks anymore
+
+CONS of `BlocListener`:
+
+- The UI may get cluttered & hard to read with multiple BlocListener
 
 ## App Screenshots
 
@@ -184,14 +197,25 @@ CONS of StreamSubscription:
     <td><img align="center" src="screenshots/gif/6_bloc_access_n_routing.gif" width="250"></img></td>
   </tr>
   <tr>
-    <td align="center">7</td>
-    <td><a href="lib/7_bloc_communication/main.dart">BLoC Communication</a></td>
+    <td align="center">7.0</td>
+    <td><a href="lib/7_0_bloc_communication/main.dart">BLoC Communication</a></td>
     <td>
-      <a href="lib/7_bloc_communication/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
-      <a href="lib/7_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
-      <a href="lib/7_bloc_communication/logic/cubit/internet_cubit.dart">internet_cubit.dart</a><br>
-      <a href="lib/7_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a><br>
+      <a href="lib/7_0_bloc_communication/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/7_0_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
+      <a href="lib/7_0_bloc_communication/logic/cubit/internet_cubit.dart">internet_cubit.dart</a><br>
+      <a href="lib/7_0_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a>
       </td>
-    <td><img align="center" src="screenshots/gif/7_bloc_communication_subscription.gif" width="250"></img></td>
+    <td><img align="center" src="screenshots/gif/7_0_bloc_communication.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">7.1</td>
+    <td><a href="lib/7_1_bloc_communication/main.dart">BLoC Communication</a></td>
+    <td>
+      <a href="lib/7_1_bloc_communication/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/7_1_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
+      <a href="lib/7_1_bloc_communication/logic/cubit/internet_cubit.dart">internet_cubit.dart</a><br>
+      <a href="lib/7_1_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a>
+      </td>
+    <td><img align="center" src="screenshots/gif/7_1_bloc_communication.gif" width="250"></img></td>
   </tr>
 </table>

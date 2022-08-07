@@ -32,12 +32,11 @@ class MyApp extends StatelessWidget {
           create: (context) => InternetCubit(connectivity: connectivity),
         ),
         BlocProvider<CounterCubit>(
-          create: (context) =>
-              CounterCubit(internetCubit: context.read<InternetCubit>()),
+          create: (context) => CounterCubit(),
         ),
       ],
       child: MaterialApp(
-        title: 'BLoC Communication',
+        title: 'BLoC Communication - BlocListener',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,
