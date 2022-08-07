@@ -160,6 +160,20 @@ CONS of `BlocListener`:
 
 - The UI may get cluttered & hard to read with multiple BlocListener
 
+## BuildContext In-Depth
+<img align="right" src="screenshots/8_buildcontext/build_context.png" height="250"></img>
+
+The `BuildContext` is a tool which helps handle the location of the widget inside the widget tree. That means every widget is build within a BuildContext.
+
+One of the most common ERROR of bloc/cubit is:
+
+```dart
+  "BlocProvider.of() fails to find a 
+  context containing a specific bloc/cubit"
+```
+
+A BuildContext of a widget keeps tract only of their direct `parent` and nothing else. Hence, the relationship between the BuildContext is a bottom-up relationship.
+
 ## App Screenshots
 
 <table align="center" style="margin: 0px auto;">
