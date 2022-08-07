@@ -198,7 +198,7 @@ CONS of `BlocListener`:
   </tr>
   <tr>
     <td align="center">7.0</td>
-    <td><a href="lib/7_0_bloc_communication/main.dart">BLoC Communication</a></td>
+    <td align="center"><a href="lib/7_0_bloc_communication/main.dart">BLoC Communication<br>using<br>StreamSubscription</a></td>
     <td>
       <a href="lib/7_0_bloc_communication/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/7_0_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
@@ -209,7 +209,7 @@ CONS of `BlocListener`:
   </tr>
   <tr>
     <td align="center">7.1</td>
-    <td><a href="lib/7_1_bloc_communication/main.dart">BLoC Communication</a></td>
+    <td align="center"><a href="lib/7_1_bloc_communication/main.dart">BLoC Communication<br>using<br>BlocListener</a></td>
     <td>
       <a href="lib/7_1_bloc_communication/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/7_1_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
