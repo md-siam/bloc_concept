@@ -117,7 +117,7 @@ Hence, we need `equatable` package to solve this problem. Equatable package simp
 
 - **Local Access:** Providing an instance of bloc/cubit to a `SINGLE SCREEN` is called local access. Example: wrapping the `HomeScreen()` with BlocProvider().
 
-- **Route Access:** Providing an instance of bloc/cubit to `MULTIPLE SCREEN` is called route access. Example: wrapping the `SecondScreen()` & `ThirdScreen()`  with BlocProvider.value().
+- **Route Access:** Providing an instance of bloc/cubit to `MULTIPLE SCREEN` is called route access. Example: wrapping the `SecondScreen()` & `ThirdScreen()` with BlocProvider.value().
 
 - **Global Access:** Providing am instance of bloc/cubit to `EVERY SCREEN` to your application. Example: wrapping the `MaterialApp()` with `BlocProvider()` or `MultiBlocProvider()`.
 
@@ -126,6 +126,26 @@ Three types of routing option in Flutter:
 1. Anonymous routing: Navigation WITHOUT a RouteName.
 2. Named routing: Navigation WITH a RouteName. Recommended for small & medium size project.
 3. Generated routing: Separating the route information into a separate file. Recommended for large size project.
+
+## BLoC Communication
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><img align="right" src="screenshots/7_bloc_communication/bloc_to_bloc_communication.png"></img></td>
+  </tr>
+</table>
+
+A Bloc.Cubit can communicate with each other using `StreamSubscription` or `BlocListener`. Both methods are equally good with their specific PROS/CONS<br>
+
+PROS of StreamSubscription:
+
+- organized, structured, easy to read & maintain.
+- will help us practice stream skills.
+
+CONS of StreamSubscription:
+
+- it may get cluttered really fast on huge apps
+- not closing streamSubscription => huge memory leaks
 
 ## App Screenshots
 
@@ -162,5 +182,16 @@ Three types of routing option in Flutter:
       <a href="lib/6_bloc_access_n_routing/logic/cubit/counter_state.dart">counter_state.dart</a>
       </td>
     <td><img align="center" src="screenshots/gif/6_bloc_access_n_routing.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">7</td>
+    <td><a href="lib/7_bloc_communication/main.dart">BLoC Communication</a></td>
+    <td>
+      <a href="lib/7_bloc_communication/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/7_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
+      <a href="lib/7_bloc_communication/logic/cubit/internet_cubit.dart">internet_cubit.dart</a><br>
+      <a href="lib/7_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a><br>
+      </td>
+    <td><img align="center" src="screenshots/gif/7_bloc_communication_subscription.gif" width="250"></img></td>
   </tr>
 </table>
