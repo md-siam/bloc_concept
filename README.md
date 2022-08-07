@@ -107,17 +107,24 @@ Hence, we need `equatable` package to solve this problem. Equatable package simp
 
 ## BLoC Access
 
-```dart
+```
   BlocProvider() vs BlocProvider.value()
+
+  - BlocProvider() -> Necessary when transferring state to the HomeScreen()
+  - BlocProvider.value() -> Necessary for transferring state to the SecondScreen() & also to the ThirdScreen()
 ```
 
-Local Access & Route Access
+- **Local Access:** Providing an instance of bloc/cubit to a `SINGLE SCREEN` is called local access. Example: wrapping the `HomeScreen()` with BlocProvider().
 
-Three types of routing:
+- **Route Access:** Providing an instance of bloc/cubit to `MULTIPLE SCREEN` is called route access. Example: wrapping the `SecondScreen()` with BlocProvider.value().
 
-1. Anonymous routing
-2. Named routing
-3. Generated routing
+- **Global Access:** Providing am instance of bloc/cubit to `EVERY SCREEN` to your application. Example: wrapping the `MaterialApp()` with `BlocProver()` or `MultiBlocProvider()`.
+
+Three types of routing option in Flutter:
+
+1. Anonymous routing: Navigation WITHOUT a RouteName.
+2. Named routing: Navigation WITH a RouteName. Recommended for small & medium size project.
+3. Generated routing: Separating the route information into a separate file. Recommended for large size project
 
 ## App Screenshots
 
@@ -145,5 +152,14 @@ Three types of routing:
       <a href="lib/5_bloc_testing/cubit/counter_state.dart">counter_state.dart</a>
       </td>
     <td><img align="center" src="screenshots/gif/5_bloc_testing.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">6</td>
+    <td><a href="lib/6_bloc_access_n_routing/main.dart">BLoC Access & Route</a></td>
+    <td>
+      <a href="lib/6_bloc_access_n_routing/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/6_bloc_access_n_routing/logic/cubit/counter_state.dart">counter_state.dart</a>
+      </td>
+    <td><img align="center" src="screenshots/gif/6_bloc_access_n_routing.gif" width="250"></img></td>
   </tr>
 </table>

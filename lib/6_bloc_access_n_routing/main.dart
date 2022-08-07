@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AppRouter _appRouter = AppRouter();
+    final AppRouter appRouter = AppRouter();
 
     return BlocProvider(
       create: (context) => CounterCubit(),
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        onGenerateRoute: _appRouter.onGenerateRoute,
+        onGenerateRoute: appRouter.onGenerateRoute,
       ),
     );
   }
