@@ -111,7 +111,8 @@ Hence, we need `equatable` package to solve this problem. Equatable package simp
   BlocProvider() vs BlocProvider.value()
 
   - BlocProvider() -> Necessary when transferring state to the HomeScreen()
-  - BlocProvider.value() -> Necessary for transferring state to the SecondScreen() & also to the ThirdScreen()
+  - BlocProvider.value() -> Necessary for transferring state to the SecondScreen() & also
+                            to the ThirdScreen()
 ```
 
 - **Local Access:** Providing an instance of bloc/cubit to a `SINGLE SCREEN` is called local access. Example: wrapping the `HomeScreen()` with BlocProvider().
