@@ -175,6 +175,11 @@ bloc/cubit"
 
 A BuildContext of a widget keeps tract only of their direct `parent` and nothing else. Hence, the relationship between the BuildContext is a bottom-up relationship.
 
+Fow of the BLoC `contexts` introduced in bloc: ^6.1.0:
+1. context.watch()
+2. context.select()
+3. context.read() 
+
 ## App Screenshots
 
 <table align="center" style="margin: 0px auto;">
