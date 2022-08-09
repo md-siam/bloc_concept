@@ -182,6 +182,23 @@ Fow of the BLoC `contexts` introduced in bloc: ^6.1.0:
 2. context.select()
 3. context.read()
 
+## Hydrated BLoC
+
+<img align="right" src="screenshots/11_hydrated_bloc/11_hydrated_bloc.png" height="250"></img>
+
+Hydrated BLoC is used mainly for storing the state of a bloc/cubit. `hydrated_bloc` exports a `Storage` interface which means it can work with any storage provider. Out of the box, it comes with its own implementation: `HydratedStorage`.
+
+`HydratedStorage` is built on top of **_HIVE_** for a platform-agnostic, performant storage layer. See the complete example for more details.
+
+Packages necessary for using hydrated bloc are:
+
+```yaml
+# For storing state into the device
+hydrated_bloc: ^8.1.0
+# For retrieving path for data storage
+path_provider: ^2.0.11
+```
+
 ## App Screenshots
 
 <table align="center" style="margin: 0px auto;">
@@ -248,5 +265,14 @@ Fow of the BLoC `contexts` introduced in bloc: ^6.1.0:
       <a href="lib/10_state_not_updating_issue/logic/cubit/settings_state.dart">settings_state.dart</a>
       </td>
     <td><img align="center" src="screenshots/gif/10_state_not_updating_issue.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">11</td>
+    <td><a href="lib/11_hydrated_bloc/main.dart">Hydrated BLoC</a></td>
+    <td>
+      <a href="lib/11_hydrated_bloc/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
+      <a href="lib/11_hydrated_bloc/logic/cubit/counter_state.dart">counter_state.dart</a>
+      </td>
+    <td><img align="center" src="screenshots/gif/11_hydrated_bloc.gif" width="250"></img></td>
   </tr>
 </table>
