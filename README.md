@@ -199,6 +199,14 @@ hydrated_bloc: ^8.1.0
 path_provider: ^2.0.11
 ```
 
+## BLoC Debugging
+
+<table align="center" style="margin: 0px auto;">
+  <tr>
+    <td><img align="right" src="screenshots/12_debugging/blocObserver.png"></img></td>
+  </tr>
+</table>
+
 ## App Screenshots
 
 <table align="center" style="margin: 0px auto;">
@@ -274,5 +282,15 @@ path_provider: ^2.0.11
       <a href="lib/11_hydrated_bloc/logic/cubit/counter_state.dart">counter_state.dart</a>
       </td>
     <td><img align="center" src="screenshots/gif/11_hydrated_bloc.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">12</td>
+    <td><a href="lib/12_debugging/main.dart">Debugging</a></td>
+    <td>
+      <a href="lib/12_debugging/logic/cubit/counter_state.dart">counter_state.dart</a><br>
+      <a href="lib/12_debugging/logic/cubit/internet_state.dart">internet_state.dart</a><br>
+      <a href="lib/12_debugging/logic/cubit/settings_state.dart">settings_state.dart</a>
+      </td>
+    <td><img align="center" src="screenshots/gif/12_debugging.gif" width="250"></img></td>
   </tr>
 </table>
