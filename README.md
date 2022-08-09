@@ -161,6 +161,7 @@ CONS of `BlocListener`:
 - The UI may get cluttered & hard to read with multiple BlocListener
 
 ## BuildContext In-Depth
+
 <img align="right" src="screenshots/8_buildcontext/build_context.png" height="250"></img>
 
 The `BuildContext` is a tool which helps handle the location of the widget inside the widget tree. That means every widget is build within a BuildContext.
@@ -168,17 +169,18 @@ The `BuildContext` is a tool which helps handle the location of the widget insid
 One of the most common ERROR of bloc/cubit is:
 
 ```dart
-"BlocProvider.of() fails to find 
-a context containing a specific 
+"BlocProvider.of() fails to find
+a context containing a specific
 bloc/cubit"
 ```
 
 A BuildContext of a widget keeps tract only of their direct `parent` and nothing else. Hence, the relationship between the BuildContext is a bottom-up relationship.
 
 Fow of the BLoC `contexts` introduced in bloc: ^6.1.0:
+
 1. context.watch()
 2. context.select()
-3. context.read() 
+3. context.read()
 
 ## App Screenshots
 
@@ -237,5 +239,14 @@ Fow of the BLoC `contexts` introduced in bloc: ^6.1.0:
       <a href="lib/7_1_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a>
       </td>
     <td><img align="center" src="screenshots/gif/7_1_bloc_communication.gif" width="250"></img></td>
+  </tr>
+  <tr>
+    <td align="center">10</td>
+    <td><a href="lib/10_state_not_updating_issue/main.dart">State Not Updating</a></td>
+    <td>
+      <a href="lib/10_state_not_updating_issue/logic/cubit/settings_cubit.dart">settings_cubit.dart</a><br>
+      <a href="lib/10_state_not_updating_issue/logic/cubit/settings_state.dart">settings_state.dart</a>
+      </td>
+    <td><img align="center" src="screenshots/gif/10_state_not_updating_issue.gif" width="250"></img></td>
   </tr>
 </table>
