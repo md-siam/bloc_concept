@@ -222,7 +222,7 @@ path_provider: ^2.0.11
     <td>
       <a href="lib/3_flutter_bloc_concept/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/3_flutter_bloc_concept/cubit/counter_state.dart">counter_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/3_flutter_bloc_concept.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -231,7 +231,7 @@ path_provider: ^2.0.11
     <td>
       <a href="lib/5_bloc_testing/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/5_bloc_testing/cubit/counter_state.dart">counter_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/5_bloc_testing.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ path_provider: ^2.0.11
     <td>
       <a href="lib/6_bloc_access_n_routing/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/6_bloc_access_n_routing/logic/cubit/counter_state.dart">counter_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/6_bloc_access_n_routing.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -251,7 +251,7 @@ path_provider: ^2.0.11
       <a href="lib/7_0_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
       <a href="lib/7_0_bloc_communication/logic/cubit/internet_cubit.dart">internet_cubit.dart</a><br>
       <a href="lib/7_0_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/7_0_bloc_communication.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -262,7 +262,7 @@ path_provider: ^2.0.11
       <a href="lib/7_1_bloc_communication/logic/cubit/counter_state.dart">counter_state.dart</a><br>
       <a href="lib/7_1_bloc_communication/logic/cubit/internet_cubit.dart">internet_cubit.dart</a><br>
       <a href="lib/7_1_bloc_communication/logic/cubit/internet_state.dart">internet_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/7_1_bloc_communication.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -271,7 +271,7 @@ path_provider: ^2.0.11
     <td>
       <a href="lib/10_state_not_updating_issue/logic/cubit/settings_cubit.dart">settings_cubit.dart</a><br>
       <a href="lib/10_state_not_updating_issue/logic/cubit/settings_state.dart">settings_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/10_state_not_updating_issue.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -280,7 +280,7 @@ path_provider: ^2.0.11
     <td>
       <a href="lib/11_hydrated_bloc/logic/cubit/counter_cubit.dart">counter_cubit.dart</a><br>
       <a href="lib/11_hydrated_bloc/logic/cubit/counter_state.dart">counter_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/11_hydrated_bloc.gif" width="250"></img></td>
   </tr>
   <tr>
@@ -290,7 +290,7 @@ path_provider: ^2.0.11
       <a href="lib/12_debugging/logic/cubit/counter_state.dart">counter_state.dart</a><br>
       <a href="lib/12_debugging/logic/cubit/internet_state.dart">internet_state.dart</a><br>
       <a href="lib/12_debugging/logic/cubit/settings_state.dart">settings_state.dart</a>
-      </td>
+    </td>
     <td><img align="center" src="screenshots/gif/12_debugging.gif" width="250"></img></td>
   </tr>
 </table>
