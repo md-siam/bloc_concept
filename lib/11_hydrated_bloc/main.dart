@@ -12,17 +12,17 @@ import 'presentation/router/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final storage = await HydratedStorage.build(
+  HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: kIsWeb
         ? HydratedStorage.webStorageDirectory
         : await getApplicationDocumentsDirectory(),
   );
-  HydratedBlocOverrides.runZoned(
-    () => runApp(MyApp(
+
+  runApp(
+    MyApp(
       appRouter: AppRouter(),
       connectivity: Connectivity(),
-    )),
-    storage: storage,
+    ),
   );
 }
 

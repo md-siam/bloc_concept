@@ -51,22 +51,22 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 if (state.counterValue < 0) {
                   return Text(
                     'BRR, NEGATIVE ${state.counterValue}',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else if (state.counterValue % 2 == 0) {
                   return Text(
                     'YAAAY ${state.counterValue}',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else if (state.counterValue == 5) {
                   return Text(
                     'HMM, NUMBER 5',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else {
                   return Text(
                     state.counterValue.toString(),
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 }
               },

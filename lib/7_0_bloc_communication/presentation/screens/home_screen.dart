@@ -36,18 +36,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     state.connectionType == ConnectionType.Wifi) {
                   return Text(
                     'Wi-Fi',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   );
                 } else if (state is InternetConnected &&
                     state.connectionType == ConnectionType.Mobile) {
                   return Text(
                     'Mobile',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   );
                 } else if (state is InternetDisconnected) {
                   return Text(
                     'Disconnected',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   );
                 }
                 return const CircularProgressIndicator();
@@ -76,22 +76,22 @@ class _HomeScreenState extends State<HomeScreen> {
                 if (state.counterValue < 0) {
                   return Text(
                     'BRR, NEGATIVE ${state.counterValue}',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else if (state.counterValue % 2 == 0) {
                   return Text(
                     'YAAAY ${state.counterValue}',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else if (state.counterValue == 5) {
                   return Text(
                     'HMM, NUMBER 5',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else {
                   return Text(
                     state.counterValue.toString(),
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 }
               },

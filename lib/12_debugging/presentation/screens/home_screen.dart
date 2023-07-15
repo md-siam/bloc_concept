@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Wi-Fi',
                     style: Theme.of(internetCubitBuilderContext)
                         .textTheme
-                        .headline3
+                        .displaySmall
                         ?.copyWith(
                           color: Colors.green,
                         ),
@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Mobile',
                     style: Theme.of(internetCubitBuilderContext)
                         .textTheme
-                        .headline3
+                        .displaySmall
                         ?.copyWith(
                           color: Colors.red,
                         ),
@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Disconnected',
                     style: Theme.of(internetCubitBuilderContext)
                         .textTheme
-                        .headline3
+                        .displaySmall
                         ?.copyWith(
                           color: Colors.grey,
                         ),
@@ -107,28 +107,28 @@ class _HomeScreenState extends State<HomeScreen> {
                     'BRR, NEGATIVE ${state.counterValue}',
                     style: Theme.of(counterCubitBuilderContext)
                         .textTheme
-                        .headline4,
+                        .headlineMedium,
                   );
                 } else if (state.counterValue % 2 == 0) {
                   return Text(
                     'YAAAY ${state.counterValue}',
                     style: Theme.of(counterCubitBuilderContext)
                         .textTheme
-                        .headline4,
+                        .headlineMedium,
                   );
                 } else if (state.counterValue == 5) {
                   return Text(
                     'HMM, NUMBER 5',
                     style: Theme.of(counterCubitBuilderContext)
                         .textTheme
-                        .headline4,
+                        .headlineMedium,
                   );
                 } else {
                   return Text(
                     state.counterValue.toString(),
                     style: Theme.of(counterCubitBuilderContext)
                         .textTheme
-                        .headline4,
+                        .headlineMedium,
                   );
                 }
               },
@@ -145,18 +145,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     internetState.connectionType == ConnectionType.Mobile) {
                   return Text(
                     'Counter: ${counterState.counterValue} Internet: Mobile',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   );
                 } else if (internetState is InternetConnected &&
                     internetState.connectionType == ConnectionType.Wifi) {
                   return Text(
                     'Counter: ${counterState.counterValue} Internet: Wifi',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   );
                 } else {
                   return Text(
                     'Counter: ${counterState.counterValue} Internet: Disconnected',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   );
                 }
               },
@@ -170,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     .select((CounterCubit cubit) => cubit.state.counterValue);
                 return Text(
                   'Counter: $counterValue',
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 );
               },
             ),

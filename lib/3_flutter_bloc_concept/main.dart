@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 builder: (context, state) {
                   return Text(
                     state.counterValue.toString(),
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 },
               ),
